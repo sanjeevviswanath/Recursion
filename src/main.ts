@@ -13,6 +13,10 @@ console.log("Reverse of {inputStr} : ", reverseString(inputStr));
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
   <h1>Recursion Tutorial</h1>
-  <h2></h2>
+  <div>
+    <h2>Reverse String</h2>
+    <p>${reverseString(inputStr)}</p>
+
+  </div>
   </div>
 `;
