@@ -1,17 +1,24 @@
 import "./style.css";
 // REVERSE STRING USING RECURSION - START
-const reverseString = (inputString: string): string => {
-  if (inputString == "") return "";
+// const reverseString = (inputString: string): string => {
+//   if (inputString == "") return "";
 
-  return reverseString(inputString.slice(1)) + inputString[0];
-};
-const inputStr = "Sanjeev Viswanath";
+//   return reverseString(inputString.slice(1)) + inputString[0];
+// };
+// const inputStr = "Sanjeev Viswanath";
 
-console.log("Input string: ", inputStr[0]);
-console.log("hello".slice(1));
-console.log("Reverse of {inputStr} : ", reverseString(inputStr));
+// console.log("Input string: ", inputStr[0]);
+// console.log("hello".slice(1));
+// console.log("Reverse of {inputStr} : ", reverseString(inputStr));
 // REVERSE STRING USING RECURSION - START
 
+// REVERSE STRING WITHOUT RECURSION - START
+const reverseString = (inputString: string): string => {
+  return inputString.split('').reverse().join("");
+};
+
+console.log("Reverse of Sanjeev : ", reverseString("Sanjeev Viswanath"));
+// REVERSE STRING WITHOUT RECURSION - END
 // CHECK FOR PALANDROM - START
 
 let inputPalString = "Racecar";
@@ -48,7 +55,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <h1>Recursion Tutorial</h1>
   <div>
     <h2>Reverse String</h2>
-    <p>${reverseString(inputStr)}</p>
+    <p></p>
 
   </div>
   </div>
