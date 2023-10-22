@@ -25,7 +25,7 @@ const checkPalandrom = (inputPalString: string): boolean => {
   }
 
   // main logic for the smallest problem to solve - where length of string = 2
-  //TODO: implement main logic for palandrom
+  //implement main logic for palandrom
 
   if (
     inputPalString[0].toLowerCase ==
