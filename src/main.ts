@@ -79,6 +79,39 @@ import "./style.css";
 
 // // CHECK FOR PALANDROM WITHOUT RECURSION - START
 
+// // CHECK FOR ANAGRAM WITHOUT RECURSION - START
+const checkAnagram = (inputStr1: string, inputStr2: string): boolean => {
+  // remove any no alphabetic characters from the string inputs
+  // logic: convert both strings to lowercase
+  // convert to an array with each letter
+  // sort the array
+  //convert to string
+  // compare both to check if they are the same.
+
+  inputStr1 = inputStr1
+    .replace(/[^A-Za-z0-9]/g, "")
+    .toLowerCase()
+    .split("")
+    .sort()
+    .join("");
+  inputStr2 = inputStr2
+    .replace(/[^A-Za-z0-9]/g, "")
+    .toLowerCase()
+    .split("")
+    .sort()
+    .join("");
+  if (inputStr1 === inputStr2) {
+    return true;
+  }
+  return false;
+};
+console.log(
+  "Check the words emit and item an anagram",
+  checkAnagram("time", "item")
+);
+
+// // CHECK FOR ANAGRAM WITHOUT RECURSION - END
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
   <h1>Recursion Tutorial</h1>
