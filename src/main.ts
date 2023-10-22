@@ -19,7 +19,7 @@ let inputPalString = "Racecar";
 const checkPalandrom = (inputPalString: string): boolean => {
   // Logic:
   //base case: if the length of the inpt string is 1 or if the input string is empty string, then return True.
-  //TODO: implement base case
+  //implement base case
   if (inputPalString.length === 0 || inputPalString.length === 1) {
     return true;
   }
