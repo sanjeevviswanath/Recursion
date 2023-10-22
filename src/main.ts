@@ -12,27 +12,40 @@ import "./style.css";
 // console.log("Reverse of {inputStr} : ", reverseString(inputStr));
 // REVERSE STRING USING RECURSION - START
 
-// REVERSE STRING WITHOUT RECURSION - START
-const reverseString = (inputString: string): string => {
-  return inputString.split("").reverse().join("");
-};
+// // REVERSE STRING WITHOUT RECURSION - START
+// const reverseString = (inputString: string): string => {
+//   return inputString.split("").reverse().join("");
+// };
 
-console.log("Reverse of Sanjeev : ", reverseString("Sanjeev Viswanath"));
-// REVERSE STRING WITHOUT RECURSION - END
-// CHECK FOR PALANDROM - START
+// console.log("Reverse of Sanjeev : ", reverseString("Sanjeev Viswanath"));
+// // REVERSE STRING WITHOUT RECURSION - END
+
+// REVERSE NUMBER WITHOUT RECURSION - START
+// const reverseNumber = (inputNumber: number): number => {
+//   return inputNumber < 0
+//     ? parseInt(inputNumber.toString().split("").reverse().join("")) * -1
+//     : parseInt(inputNumber.toString().split("").reverse().join(""));
+// };
+// console.log(
+//   "Sum of 25 and reverse of -52 should be zero",
+//   25 + reverseNumber(-52)
+// );
+// REVERSE NUMBER WITHOUT RECURSION - END
+
+// //CHECK FOR PALANDROM - START
 
 // let inputPalString = "Racecar";
 
 // const checkPalandrom = (inputPalString: string): boolean => {
 // Logic:
-//base case: if the length of the inpt string is 1 or if the input string is empty string, then return True.
-//implement base case
+// base case: if the length of the inpt string is 1 or if the input string is empty string, then return True.
+// implement base case
 //   if (inputPalString.length === 0 || inputPalString.length === 1) {
 //     return true;
 //   }
 
 // main logic for the smallest problem to solve - where length of string = 2
-//implement main logic for palandrom
+// implement main logic for palandrom
 
 //   if (
 //     inputPalString[0].toLowerCase ==
@@ -48,21 +61,23 @@ console.log("Reverse of Sanjeev : ", reverseString("Sanjeev Viswanath"));
 //   inputPalString,
 //   checkPalandrom(inputPalString)
 // );
-// CHECK FOR PALANDROM WITH RECURSION - END
-// CHECK FOR PALANDROM WITHOUT RECURSION - START
+// //CHECK FOR PALANDROM WITH RECURSION - END
 
-const checkPalandrom = (inputString: string): boolean => {
-  return (
-    inputString.toLowerCase() ===
-    inputString.toLowerCase().split("").reverse().join("")
-  );
-};
-console.log(
-  "check palandrom for word 'Malayalam'",
-  checkPalandrom("Malayalam")
-);
+// // CHECK FOR PALANDROM WITHOUT RECURSION - START
 
-// CHECK FOR PALANDROM WITHOUT RECURSION - START
+// const checkPalandrom = (inputString: string): boolean => {
+//   return (
+//     inputString.toLowerCase() ===
+//     inputString.toLowerCase().split("").reverse().join("")
+//   );
+// };
+// console.log(
+//   "check palandrom for word 'Malayalam'",
+//   checkPalandrom("Malayalam")
+// );
+
+// // CHECK FOR PALANDROM WITHOUT RECURSION - START
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
   <h1>Recursion Tutorial</h1>
