@@ -22,9 +22,10 @@ import "./style.css";
 
 // REVERSE NUMBER WITHOUT RECURSION - START
 // const reverseNumber = (inputNumber: number): number => {
-//   return inputNumber < 0
-//     ? parseInt(inputNumber.toString().split("").reverse().join("")) * -1
-//     : parseInt(inputNumber.toString().split("").reverse().join(""));
+//   const reverseNum = parseInt(
+//     inputNumber.toString().split("").reverse().join("")
+//   );
+//   return inputNumber < 0 ? reverseNum * -1 : reverseNum;
 // };
 // console.log(
 //   "Sum of 25 and reverse of -52 should be zero",
