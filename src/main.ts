@@ -100,10 +100,8 @@ const checkAnagram = (inputStr1: string, inputStr2: string): boolean => {
     .split("")
     .sort()
     .join("");
-  if (inputStr1 === inputStr2) {
-    return true;
-  }
-  return false;
+
+  return inputStr1 === inputStr2 ? true : false;
 };
 console.log(
   "Check the words emit and item an anagram",
